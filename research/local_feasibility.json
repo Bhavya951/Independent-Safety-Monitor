@@ -1,0 +1,17 @@
+{
+  "status": "pending_owner_authorization",
+  "backend": "Ollama loopback only",
+  "model_candidate": "qwen2.5-coder:3b",
+  "model_digest": null,
+  "scope": "12 public development cases, one case per family, no downloads and no protected data",
+  "selection": "canonical slot 0 from each development family",
+  "arms": ["source_style_prompt", "separate_review_prompt"],
+  "fixed_options": {"temperature": 0, "seed": 31031, "num_ctx": 2048, "num_predict": 96},
+  "max_calls": 24,
+  "timeout_seconds_per_call": 45,
+  "max_wall_seconds": 1200,
+  "retries": 0,
+  "stop_on": ["missing installed digest", "unavailable loopback", "timeout", "budget exhaustion"],
+  "log": ["model digest", "Ollama version", "prompt hash", "raw response", "parsed status", "token count", "latency"],
+  "interpretation": "Same-checkpoint prompt feasibility. No inference about model independence. Malformed output is an abstention and reported separately."
+}

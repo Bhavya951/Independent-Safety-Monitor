@@ -1,0 +1,6 @@
+# Preserve the exact bytes and hashes of the registered experiment inputs and evidence.
+/src/*.py -text
+/tests/*.py -text
+/research/development_registration.md -text
+/research/local_feasibility.json -text
+/results/public_v1.json -text
